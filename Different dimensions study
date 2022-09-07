@@ -1,0 +1,29 @@
+dims = (18, 18, 18)
+
+qs = [1, 2]
+
+t = 10^5
+
+times = 100
+
+density_t, taus = @time Avg_Voter_model(dims, qs, t, times)
+
+print("acabat")
+
+* ----------------------------------------
+
+using Plots
+using Statistics
+using StatsBase
+
+Ns = [7, 9, 11, 13]
+
+qs = [1, 2]
+
+t = 10^5
+
+times = 10^3
+
+N_study(Ns, qs, t, times)
+
+*--------------------------------
